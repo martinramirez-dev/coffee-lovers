@@ -1,35 +1,39 @@
-* { 
-    box-sizing: border-box; 
+* {
+    box-sizing: border-box;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-body { 
-    margin: 0; 
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 /* Hero Content */
-
 .cont {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #af5218;
     color: #4b2107;
+    text-align: center;
+    padding: 40px 20px;
 }
 
 .cont h1 {
-    margin: -10px; padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
-.ctext1 { 
-    font-size: 150px; 
+.ctext1 {
+    font-size: clamp(3rem, 10vw, 150px);
 }
 
-.ctext2 { 
-    font-size: 41px; 
+.ctext2 {
+    font-size: clamp(1.5rem, 5vw, 41px);
 }
 
 .cont2 {
@@ -37,38 +41,43 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100vh;
+    flex-wrap: wrap;
+    min-height: 100vh;
     background-color: #4b2107;
     color: #af5218;
+    padding: 40px 20px;
+    text-align: center;
 }
 
 .cont2 h1 {
-    margin: 0; 
+    margin: 0;
     padding: 0;
 }
 
-.ctext3 { 
-    font-size: 32vh; 
-    line-height: 180px; 
+.ctext3 {
+    font-size: clamp(5rem, 18vw, 200px);
+    line-height: 1;
 }
 
-.ctext4 { 
-    font-size: 11vh; 
+.ctext4 {
+    font-size: clamp(2rem, 6vw, 80px);
 }
 
-.cont2-img { 
-    margin-left: 30px; 
+.cont2-img {
+    margin-left: 30px;
+    max-width: 100%;
 }
 
 /* Menu */
-
-.menu { 
+.menu {
     display: flex;
     justify-content: center;
     align-items: center;
     position: fixed;
+    top: 0;
     background-color: #af5218;
     width: 100%;
+    z-index: 1000;
 }
 
 .menu a {
@@ -77,54 +86,57 @@ body {
     text-decoration: none;
 }
 
-.menu a:hover { 
+.menu a:hover {
     color: #351400;
     cursor: pointer;
 }
 
 /* Posters */
-
 .main {
     width: 100%;
     color: #af5218;
+    text-align: center;
+    padding: 40px 20px;
 }
 
 .main h1 {
     margin: 0;
-    font-size: 30vh;
-    line-height: 150px;
+    font-size: clamp(5rem, 15vw, 200px);
+    line-height: 1;
 }
 
 .main-carrousel {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 30px;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
 }
 
 .main-carrousel img {
-    flex: 25%;
-    max-width: 25%;
-    padding: 5px;
+    width: 100%;
+    max-width: 300px;
     border-radius: 15px;
 }
 
 /* Products */
-
 .main-carrousel2 {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    padding: 0 30px;
+    justify-content: center;
+    padding: 40px 20px;
 }
 
 .main-carrousel2 .card {
-    flex: calc(25% - 20px);
+    flex: 1 1 250px;
+    max-width: 300px;
     border-radius: 5px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     text-align: center;
-    border:1px solid #af5218;
+    border: 1px solid #af5218;
     padding: 22px;
 }
 
@@ -161,41 +173,34 @@ body {
 }
 
 .products .h1 {
-    font-size: 20vh;
+    font-size: clamp(3rem, 10vw, 120px);
     padding: 0 30px;
 }
 
 /* About */
-
 .about {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 22px;
+    font-size: clamp(1rem, 2vw, 22px);
     gap: 30px;
     margin-top: 10px;
+    flex-wrap: wrap;
+    padding: 20px;
+    text-align: center;
 }
 
 /* Footer */
-
 .footer {
     width: 100%;
-    padding: 40px;
+    padding: 40px 20px;
     text-align: center;
     color: #af5218;
     background: #4b2107;
-    font-size: 10vh;
-    margin-top: 22px;
+    font-size: clamp(2rem, 7vw, 80px);
 }
 
-/* Media */
-
-@media screen and (max-width: 1030px) {
-    .main-carrousel2 .card {
-        flex: calc(50% - 20px);
-    }
-}
-
+/* Media Queries */
 @media screen and (max-width: 950px) {
     .cont2 {
         flex-direction: column;
@@ -205,16 +210,6 @@ body {
         margin-left: 0;
     }
 
-    .ctext3 { 
-        font-size: 22vh; 
-        line-height: 140px; 
-    }
-    
-    .ctext4 { 
-        font-size: 6vh; 
-    }
-
-    /* About */
     .about {
         flex-direction: column;
     }
@@ -226,44 +221,6 @@ body {
     }
 
     .main-carrousel img {
-        flex: 50%;
-        max-width: 50%;
-    }
-
-    h1 {
-        text-align: center;
-    }
-
-    #h1 {
-        font-size: 15vh;
-    }
-
-    #title {
-        font-size: 18vh;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .main-carrousel2 .card {
-        flex: calc(100% - 20px);
-    }
-}
-
-@media screen and (max-width: 450px) {
-    .main-carrousel img {
-        flex: 100%;
         max-width: 100%;
-    }
-
-    .main-carrousel2 .card {
-        flex: calc(100% - 20px);
-    }
-
-    #title {
-        font-size: 12vh;
-    }
-
-    #h1 {
-        font-size: 10vh;
     }
 }
