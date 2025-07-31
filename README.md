@@ -16,6 +16,7 @@ Built with HTML5 and CSS3, it showcases a warm, inviting aesthetic using coffee 
 - 🏺 Section showcasing coffee jars and pots  
 - 📩 Contact section (email and WhatsApp only)  
 - 📁 Organized file structure with all images stored in the `/images` folder
+- 📱 Responsive design for movile a tablet devices
 
 ## 🛠️ Built With
 
