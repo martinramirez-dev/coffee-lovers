@@ -24,12 +24,12 @@ Built with HTML5 and CSS3, it showcases a warm, inviting aesthetic using coffee 
 
 ## 📷 Preview
 
-<img width="1266" height="598" alt="image" src="https://github.com/user-attachments/assets/7ed9f2da-7474-400e-9c48-24d068b992df" />
-<img width="1264" height="597" alt="image" src="https://github.com/user-attachments/assets/1c910db3-d5e5-41e3-9ba8-f0302b217cc3" />
-<img width="1263" height="532" alt="image" src="https://github.com/user-attachments/assets/25a97a73-66e5-4850-9fdb-d7e21c5f0c41" />
-<img width="1264" height="600" alt="image" src="https://github.com/user-attachments/assets/d92379cd-9df8-49bd-b12d-fcbb19652198" />
+<img width="1261" height="597" alt="image" src="https://github.com/user-attachments/assets/d37d6422-b10b-4c84-b247-83c84836974c" />
+<img width="1261" height="598" alt="image" src="https://github.com/user-attachments/assets/dbabafe5-8fac-4d87-84d5-f2b259de63b4" />
+<img width="1260" height="535" alt="image" src="https://github.com/user-attachments/assets/c10887b8-b167-44aa-aa46-7b327ade9dc4" />
 
-📬 Contact
+
+## 📬 Contact
 If you want to connect:
 
 📧 Email: devmartinramirez@gmail.com
